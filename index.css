@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Paytone+One&family=Roboto:wght@400;700&display=swap');
+	:root {
+  --shadow1: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  --shadow2:rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+	}
+
+
+*{box-sizing: : border-box;}	
+
+	h1{font-family: 'Paytone One', sans-serif;
+	font-size: 85px;
+		
+}
+	h2{font-family: 'Roboto', sans-serif;}
+	p, h3{font-family: 'Helvetica', sans-serif;}
+
+body{
+	background-image: url(./images/landing-background.svg);
+}
+.shadow-3{box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;}
+ .menu-logo{
+ 	width:45px;
+ 	box-shadow: var(--shadow1);
+ 	opacity:.5;
+ 	border:none;
+ 	border-radius: 50px;
+ 	background-color: #EDE8C9;
+ }
+ .logo-container{
+ 	background-color: #EDE8C9;
+ 	width: 80px;
+ 	border-radius: 0 0 50px 50px;}
+ .menu-container{
+ 	background-color: #EDE8C9;
+ 	width: 250px;
+ 	height: 65px;
+ 	border-radius: 0 0 30px 30px;
+ 	z-index: 20}
+
+.icon1:hover, .icon2:hover, .icon3:hover{
+	box-shadow: var(--shadow2);
+ 	opacity:1;
+ }
+.cris::after{
+	content:"";
+	background-color:#E0743E;
+	width: 40px;
+ 	height: 40px;
+ 	border-radius: 50px;
+ 	position: fixed;
+ 	top:30px;left:40%;
+}
+
+
+.my-name{
+  stroke: #23625B
+;
+  fill-opacity: 1;
+  stroke-width: 0;
+  stroke-dasharray: 100% 0;
+  animation: stroke-offset 1s ease-in;
+}
+
+.my-name:hover{
+animation: pop 1s ease-in-out;
+}
+
+@keyframes stroke-offset {
+  0% {
+    fill-opacity: 0;
+    stroke-width: 0;
+    stroke-dasharray: 0% 100%;
+  }
+  25% {
+    stroke-width: 3px;
+  }
+  50% {
+    fill-opacity: 0;
+  }
+  75% {
+    stroke-width: 3px;
+  }
+  100% {
+    stroke-width: 0;
+    box-shadow: var(--shadow-3)
+  }
+}
+.dot{
+	fill:#E0743E;
+	opacity:0;
+	animation: pop 0.7s;
+	animation-delay: 1s;
+	animation-fill-mode: forwards;
+}
+
+
+
+@keyframes pop
+{
+  0%
+  {
+    transform: scale( .98 )
+    opacity:1;
+  }
+  20%
+  {
+    transform: scale( 1 );
+    opacity:1;
+  }
+  40%
+  {
+    transform: scale( .98 );
+    opacity:1;
+  }
+  60%
+  {
+    transform: scale( 1 );
+    opacity:1;
+  }
+  80%
+  {
+    transform: scale( .98 );
+    opacity:1;
+  }
+  100%
+  {
+    transform: scale( 1 );
+    opacity:1;
+  }
+}
+.avatar
+@keyframes layer-slide-up {
+  0% {
+    transform: translateY(80rem);
+  }
+  70% {
+    transform: translateY(-0.5rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
