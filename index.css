@@ -233,9 +233,17 @@ background-image: url(./images/aboutme-bg.svg);
 background-repeat: no-repeat;
 
 }
+.scene-4-avatar-container::after{
+  content: "";
+  background-color: white;
+  height: 100px;
+  width: 100px;
+  opacity: .4;
+  border-radius: 50px;
+}
 
 /*SCENE 3 GALLERY*/
-.artworkgallery-bg, .card{
+.card{
   background-color: #144242;
 }
 
@@ -244,15 +252,26 @@ background-repeat: no-repeat;
 
 }
 
+.artworkgallery-bg{
+ background-color: #144242;
+background-image: url(./images/gallery-bg.svg);
+background-repeat: no-repeat;
+
+}
 .card-image{
   filter:grayscale(100%);
   height: 200px;
 }
-.:hover{
+.cardanimate:hover .card-image3 {
   filter:grayscale(0%);
-  transform: scale(1.2);
+  transform: scale(1.1);
+  transition: .7s ease-in-out;
 }
-
+.cardanimate:hover .card-title{
+  color: #E0743E;
+  font-family: 'Paytone One', sans-serif;
+  transition: .5s ease-in-out;
+}
 .card-color {
   background-color: #EDE8C9;
 }
@@ -262,12 +281,14 @@ background-repeat: no-repeat;
 .avatar3{
   height: 500px;
 }
-.avatar-3-con::before{
-  content: "";
-  background-color: red;
-  height: 300px;
 
+/*NOT POSSIBLE*/
+.moon:{
+  background-image: url(./images/moon.svg);
+  background-repeat: no-repeat;
 }
+/*NOT POSSIBLE*/
+
 .myform{
   background-color: #144242;
   color: #EDE8C9;

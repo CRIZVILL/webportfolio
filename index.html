@@ -51,8 +51,10 @@
 
 <!-- nav starts HERE: LOGO -->
 <nav class="fixed-top d-flex avatar animate__animated animate__fadeInDown">
+
 	<div  class=" logo-container float-left pt-3 pr-2 pb-3 ml-3 pl-2 mr-auto shadow-3" >
-		<img  class="img-fluid float-left pd-2" id="navlogo" src="./images/navlogo.svg">
+		<a href="#home">
+			<img  class="img-fluid float-left pd-2" id="navlogo" src="./images/navlogo.svg"> </a>
 	</div>
 	<!-- menu container for md up screens -->
 	<div  class=" menu-container  float-right w-md-50 pt-2 justify-content-around shadow-3 mr-2 d-none d-md-flex">
@@ -70,7 +72,7 @@
 </nav> 
 
 	<!-- StART of PROFILE CONTAINER -->
-<div class="about-container container-fluid text-center pl-0 pr-0" id="about">
+<div class="about-container container-fluid text-center pl-0 pr-0" id="home" >
 		<!-- TEXT -->
 	<div class="container-fluid mt-5">
 		<div class="d-md-flex d-block pt-4 pb-0 mb-0">
@@ -137,8 +139,9 @@
 	<!-- END of PROFILE CONTAINER -->
 
 	<!-- START OF ABOUT ME -->
-<div class="container-fluid m-0 pl-0 pr-0 pb-0 aboutme-bg">
+<div class="container-fluid m-0 pl-0 pr-0 pb-0 aboutme-bg" id="about">
 	<div class="d-md-flex d-block p-0">
+		<!-- THIS IS THE ABOUT ME AVATAR SVG -->
 		<div class=" scene-4-avatar-container col-md-7 pr-5   order-1 order-md-2 p-0">
 			<img class=" img-fluid float-center vw-100  float-right" src="./images/scene-1a.svg">	
 		</div>
@@ -156,13 +159,14 @@
 <!-- END OF ABOUT ME -->
 
 <!-- START OF ARTWORK GALLERY -->
-<div class="container-fluid m-0 pl-0 pr-0 artworkgallery-bg">
+<div class="container-fluid m-0 pl-0 pr-0 gallery-bg">
 <div class="artworkgallery-bg container-fluid m-0 pl-0 pr-0" id="gallery">
 	<div class="d-md-flex d-block p-0" >
 		<div class=" scene-4-avatar-container col-md-6   order-1 order-md-2 p-0">
 			<img class="scene-4-avatar img-fluid float-center vw-100 " src="./images/scene-4.svg">
 		</div>
-		<div class=" col-md-6 text-center order-2 order-md-1 align-items-center  p-0 mt-0 pt-md-5 mt-md-5">
+
+		<div class=" moon col-md-6 text-center order-2 order-md-1 align-items-center  p-0 mt-0 pt-md-5 mt-md-5">
 			<h2 class="big-words">Some of my</h2>
 			<h2 class="big-words">Selected Works</h2>
 			<div class="gallery-subheading pl-5 pr-5">I generally do traditional artworks but I also create digital arts using Adobe Photoshop and Illustrator.</div> 
@@ -178,7 +182,7 @@
 			<div class=" border-0 card pr-md-5 col-md-6 pl-0 pb-4 pt-4  float-left " href="#card1"  >
 				<img class="img-fluid" src="./images/stick-l.svg"> 
 
-				<div class="card-color  rounded shadow-3 p-2 float-center float-md-right ml-3 mr-2" >
+				<div class=" cardanimate card-color  rounded shadow-3  overflow-hidden p-2 float-center float-md-right ml-3 mr-2" >
 					<div class=" m-2 card-image card-image3 rounded overflow-hidden">
 						<img class=" img-fluid" src="./images/art1.jpg" class="card-img-top" alt="example of my artwork">
 					</div>
@@ -196,8 +200,8 @@
 			<div class="card border-0 pl-md-5 d-md-flex d-block col-md-6 pr-0 pb-4 pt-4  float-right" href="#card1"  >
 					<img class="img-fluid float-md-right" src="./images/stick-r.svg"> 
 
-					<div class="card-color card-color  rounded shadow-3 p-2 float-center float-md-right ml-3 mr-2" >
-						<div class=" m-2 card-image card-image1 rounded overflow-hidden">
+					<div class="cardanimate card-color card-color overflow-hidden rounded shadow-3 p-2 float-center float-md-right ml-3 mr-2" >
+						<div class=" m-2 card-image card-image3 rounded overflow-hidden">
 							<img class=" img-fluid" src="./images/art2.jpg" class="card-img-top" alt="example of my artwork">
 						</div>
 					  	<div class="card-body justify-content-center float-center">
@@ -220,7 +224,7 @@
 		<div class=" border-0 card pr-md-5 col-md-6 pl-0 ml- 0 pb-4 pt-4 float-left " href="#card1"  >
 				<img class="img-fluid" src="./images/stick-l.svg"> 
 
-				<div class="card-color p-2 float-center card-color  rounded shadow-3 float-md-right ml-3 mr-2" >
+				<div class="cardanimate card-color p-2 float-center overflow-hidden card-color  rounded shadow-3 float-md-right ml-3 mr-2" >
 					<div class=" m-2 card-image card-image3 rounded overflow-hidden">
 						<img class=" img-fluid" src="./images/art3.jpg" class="card-img-top" alt="example of my artwork">
 					</div>
@@ -238,8 +242,8 @@
 		<div class=" border-0 card pl-md-5 col-md-6 pr-0 pl-4 pb-4 pt-4float-right" href="#card1"  >
 				<img class="img-fluid float-md-right" src="./images/stick-r.svg"> 
 
-				<div class=" card-color card-color  rounded shadow-3 shadow-3 p-2 float-center float-md-right ml-3 mr-2" >
-					<div class=" m-2 card-image card-image4 rounded overflow-hidden">
+				<div class=" cardanimate card-color card-color  overflow-hidden rounded shadow-3 shadow-3 p-2 float-center float-md-right ml-3 mr-2" >
+					<div class=" m-2 card-image card-image3  rounded overflow-hidden">
 						<img class=" img-fluid" src="./images/art4.jpg" class="card-img-top" alt="example of my artwork">
 					</div>
 				  	<div class="card-body justify-content-center float-center">
