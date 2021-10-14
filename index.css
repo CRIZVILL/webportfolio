@@ -90,6 +90,7 @@ animation: pop 1s ease-in-out;
   height: 40px;
   box-shadow: var(--shadow1);
   border-radius:50px;
+  cursor:pointer;
 }
 .button-text{
   color:#7A7763;
