@@ -40,9 +40,11 @@ body{background-color: #DBD2A7;}
 animation: pop 1s ease-in-out;
 }
 
-
+.gallery-subheading{
+  color:#EDE8C9;
+  font-size: 25px;
+}
 .separator{
-  height: 40px;
   background-color: #A2A588;
   box-shadow: var(--shadow2);
 
@@ -224,6 +226,13 @@ animation: pop 1s ease-in-out;
   }
 }
 
+/*ABOUT ME */
+.aboutme-bg{
+  background-color: #144242;
+background-image: url(./images/aboutme-bg.svg);
+background-repeat: no-repeat;
+
+}
 
 /*SCENE 3 GALLERY*/
 .artworkgallery-bg, .card{
