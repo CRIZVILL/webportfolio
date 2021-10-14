@@ -27,7 +27,7 @@ h2{font-family: 'Paytone One', sans-serif;
 h3{font-family: 'Roboto', sans-serif;
   color:#23625B;
 }
-p, h5{font-family: 'Helvetica', sans-serif;
+p, h5{font-family: 'Roboto', sans-serif;
   color:#1F5F58;}
 body{background-color: #DBD2A7;}
 .big-words{
@@ -36,6 +36,11 @@ body{background-color: #DBD2A7;}
   animation-duration:;
   text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
 }
+.big-words:hover{
+animation: pop 1s ease-in-out;
+}
+
+
 .separator{
   height: 40px;
   background-color: #A2A588;
@@ -76,7 +81,24 @@ body{background-color: #DBD2A7;}
   border-radius: 0 0 30px 30px;
   z-index: 20}
 
-.icon1:hover, .icon2:hover, .icon3:hover{
+/*for gallery and form*/
+.button-style{
+  background-color: #EDE8C9;
+  width: 100px;
+  height: 40px;
+  box-shadow: var(--shadow1);
+  border-radius:50px;
+}
+.button-text{
+  color:#7A7763;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+.button-text:hover{
+  color:#E0743E;
+}
+
+.icon1:hover, .icon2:hover, .icon3:hover, .button-style:hover{
   box-shadow: var(--shadow2);
   opacity:1;
  }
@@ -175,7 +197,7 @@ animation: pop 1s ease-in-out;
 }
 .scene-4-avatar{
   height:390px;
-  transform-origin:10% 0 ;
+  transform-origin:50% 0;
   animation: swing 3s ease-in-out infinite;
 
 }
@@ -183,6 +205,7 @@ animation: pop 1s ease-in-out;
   overflow-y: hidden;
 
 }
+
  @keyframes swing {
   0% {transform: rotate(0deg);}
   45% {transform: rotate(10deg);}
@@ -202,9 +225,13 @@ animation: pop 1s ease-in-out;
 }
 
 
-/*SCENE 3*/
+/*SCENE 3 GALLERY*/
+.artworkgallery-bg, .card{
+  background-color: #144242;
+}
+
 .scene-3-container{
-  background-color: #1F5F58;
+  background-color: #144242;
 
 }
 
@@ -217,3 +244,24 @@ animation: pop 1s ease-in-out;
   transform: scale(1.2);
 }
 
+.card-color {
+  background-color: #EDE8C9;
+}
+.contact-container{
+  background-color:#EDE8C9;
+}
+.avatar3{
+  height: 500px;
+}
+.avatar-3-con::before{
+  content: "";
+  background-color: red;
+  height: 300px;
+
+}
+.myform{
+  background-color: #144242;
+  color: #EDE8C9;
+  font-family: 'Roboto', sans-serif;
+
+}
