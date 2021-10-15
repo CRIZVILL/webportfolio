@@ -20,6 +20,9 @@
     
 }
 
+html {
+        scroll-behavior: smooth;
+}
 /*WORDS*/
 h2{font-family: 'Paytone One', sans-serif;
   color:#E0743E;
