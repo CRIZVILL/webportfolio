@@ -127,7 +127,7 @@
 		<div class=" lp-avatar-wrapper vertical-align-bottom container-fluid p-0 m-0 vw-100 col-md-6  mb-0 position-relative  " >
 			<img  class=" lp-avatar  img-fluid position-absolute  p-0 m-0 " src="./svg/lp-bg.svg ">
 			<img  class=" lp-avatar  img-fluid position-absolute  p-0 m-0 " src="./svg/lp-avatar-bg.svg ">
-			<img  class=" lp-avatar img-fluid  position-absolute p-0 m-0 " src="./svg/lp-pupil.svg ">
+			<img  class=" pupils lp-avatar img-fluid  position-absolute p-0 m-0 " src="./svg/lp-pupil.svg ">
 			<img  class="  blink lp-avatar img-fluid   p-0 m-0 " src="./svg/lp-avatar.svg ">
 		
 			
@@ -158,7 +158,7 @@
 			<img  class=" blink2 float-left img-fluid  vertical-align-bottom p-0 m-0   " src="./svg/intro-scene-closed-eyes.svg ">	
 		</div>
 
-		<div class="container-fluid intro m-0 pl-0 pr-0 col-md-5  p-0 text-center align-middle pt-md-5">	
+		<div class="container-fluid intro m-0 pl-2 pr-2  col-md-5  p-0 text-center align-middle pt-md-5">	
 				<div class="mt-0 intro-text pt-0 pt-md-0 md-5 mt-md-1 pt-lg-5 mt-lg-5">I enjoy</div>
 				<h1 class="big-words ">Illustrative Design</h1>
 				<div class="intro-text pl-2 pr-2">I always strive hard to make my design</div>
@@ -195,6 +195,10 @@
 		<div class="slideavatar active container-fluid p-0 m-0 ">
 			<img class="img-fluid float1 img-height vw-100 p-0 m-0 float-center position-absolute" src="./svg/music-avatar.svg">
 			<img  class="float2 img-height img-fluid m-0 p-0 vw-100 position-absolute float-center" src="./svg/music-items.svg">
+			<img id="play" class="img-height img-fluid m-0 p-0 vw-100 position-absolute float-center" src="./svg/play.svg">
+			<audio id="music">
+				<source src="./media/music.mp3" type="">
+			</audio>
 		</div>
 		<div class="slideavatar container-fluid p-0 m-0 ">
 			<img class="img-fluid float2 img-height vw-100 p-0 m-0 float-center position-absolute" src="./svg/fashion-items.svg">
@@ -229,13 +233,13 @@
 
 		<div class="slidetext m-0 position-absolute">
 			<div class="cursive  text-center text-md-left p-0 pt-0">Designing</div>
-			<p class=" my-interest-text text-center justify-content-center pl-3 pr-3 pr-md-5 mr-0 mr-md-3 mt-md-5 mt-3 pb-2 mb-0"  id="">Whenever I have the time, I start sketching a design, pull up my sewing machine and start creating an outfit. I'm fond of revamping old clothes since it's cost-effective, has its environmental perks, comfy and most of all, it's one of a kind. </p>
+			<p class=" my-interest-text text-center justify-content-center pl-3 pr-3 pr-md-5 mr-0 mr-md-3 mt-md-5 mt-3 pb-2 mb-0"  id="">Whenever I have the time, I start sketching a design, pull up my sewing machine and start creating an outfit. I'm fond of revamping clothes since it's cost-effective, has its environmental perks, comfy and most of all, it's one of a kind. </p>
 			
 		</div>
 
 		<div class="slidetext m-0 position-absolute">
 			<div class="cursive   text-center text-md-left p-0 pt-0 ">Painting</div>
-			<p class=" my-interest-text text-center justify-content-center pl-3 pr-3 pr-md-5 mr-0 mr-md-3 mt-md-5 mt-3 pb-2 mb-0"  id="">I'm a self-taught artist. I've been creating traditional artworks using mixed-media. I also do digital illustrations in Adobe Photoshop and Illustrator. The theme of most of my illustrations portrays the coexistence of human and nature. </p>
+			<p class=" my-interest-text text-center justify-content-center pl-3 pr-3 pr-md-5 mr-0 mr-md-3 mt-md-5 mt-3 pb-2 mb-0"  id="">I'm a self-taught artist. I've been creating traditional artworks using mixed-media. I also do digital illustrations in Adobe Photoshop and Illustrator. The theme of most of my illustrations portrays the coexistence of humans and nature. </p>
 		
 		</div>
 
@@ -248,7 +252,7 @@
 				<a target="_blank"href="https://www.youtube.com/playlist?list=PLDeuzcuDkC0pdiMIebYctIHC_q_1A2R4V" class="   p-md-3  button-text text-decoration-none" >Youtube Playlist</a>
 			</div>
 			<div class=" text-center mt-3 mt-md-5  m-0 float-center buttonlink p-2 ml-5 ">
-				<a target="_blank"href="#" class="   p-md-3  button-text text-decoration-none" >Digital Wardobe</a>
+				<a  href="#" class="   p-md-3  button-text text-decoration-none" >Digital Wardobe</a>
 			</div>
 			<div class=" text-center mt-3 mt-md-5 m-0 float-center buttonlink p-2 ml-5 f">
 				<a target="_blank"href="https://www.instagram.com/crstyvll/" class="   p-md-3  button-text text-decoration-none" >Art Gallery</a>
@@ -415,17 +419,17 @@
 			     <div class="modal-dialog">
 			       <div class="modal-content">
 			         <div class="modal-header">
-			           <h5 class="modal-title text dark" id="exampleModalLabel">Oops</h5>
+			           <h5 class="modal-title text dark" id="exampleModalLabel"><b>Oops!</b></h5>
 
 			         <button type="button" class="close float-center" data-dismiss="modal" aria-label="Close">
 			             <span aria-hidden="true">&times;</span>
 			           </button>
 			         </div>
-			         <div class="modal-body text-dark">
+			         <div class="modal-body text-dark ">
 			           <p>Cristy is temporarily unavailable.</p>
 			         </div>
 			         <div class="modal-footer ">
-			           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			           <button type="button" class="btn button-style button-text" data-dismiss="modal">Close</button>
 			           
 			         </div>
 			       </div>

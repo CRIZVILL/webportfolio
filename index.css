@@ -95,6 +95,7 @@ animation: pop 1s ease-in-out;
   height: 40px;
   box-shadow: var(--shadow1);
   border-radius:50px;
+  border: none;
   cursor:pointer;
 }
 .button-text{
@@ -110,15 +111,6 @@ animation: pop 1s ease-in-out;
   box-shadow: var(--shadow2);
   opacity:1;
  }
-.cris::after{
-  content:"";
-  background-color:#E0743E;
-  width: 40px;
-  height: 40px;
-  border-radius: 50px;
-  position: fixed;
-  top:30px;left:40%;
-}
 
 
 .my-name{
@@ -133,6 +125,17 @@ animation: pop 1s ease-in-out;
 .my-name:hover{
 animation: pop 1s ease-in-out;
 }
+.pupils{
+  animation: eyemove 5s ease-in-out infinite;
+}
+
+@keyframes eyemove{
+0%{transform: translateY(0);}
+10%{transform: translateY(5px)}
+20%{transform: translateY(0)}
+}
+
+
 
 @keyframes stroke-offset {
   0% {
@@ -487,7 +490,9 @@ transition: .3s;
    color:#E0753E;
    box-shadow: var(--shadow2);
 }
-
+#play{
+  z-index: 20;
+}
 
 /*MY CODING JOURNEY----------------------*/
 .gallery-subheading{
@@ -497,6 +502,7 @@ transition: .3s;
 
 .moon .big-words{
   font-size: 40px;
+  color:#EDE8C9;
 }
 
 
@@ -540,7 +546,12 @@ box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(46, 94, 92) 0px 0px 0px 3px;}
 .pop{
 animation: pop 2s ease-in-out infinite;
 }
-
+.modal-header{
+  background-image: url(./svg/cat.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: red,
+}
 
 /*============================================================*/
 @media screen and (min-width: 768px) {
@@ -650,9 +661,9 @@ animation: pop 2s ease-in-out infinite;
     top:75px;
     }
     h3{font-size: 22px;}
-  .about-image-wrapper{
+/*  .about-image-wrapper{
   height:370px;
-  }
+  }*/
   .intro .big-words{
     color:#E0743E;
     font-size: 30px;

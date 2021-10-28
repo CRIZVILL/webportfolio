@@ -45,3 +45,18 @@ btns.forEach((btn, i) => {
 });
 
 
+// music----------------
+var music= document.getElementById("music");
+var icon = document.getElementById("play");
+
+icon.onclick =function(){
+  if(music.paused){
+    music.play();
+    icon.src="./svg/pause.svg";
+  }
+  else{
+    music.pause();
+    icon.src="./svg/play.svg";
+  }
+  
+}
