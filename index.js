@@ -60,3 +60,14 @@ icon.onclick =function(){
   }
   
 }
+
+// preloader-----------------
+window.addEventListener('load', ()=>{
+  const preload=document.querySelector('.loader');
+  preload.classList.add('preload-finish');
+})
+
+/*window.addEventListener('load', ()=>{
+  const preload=document.querySelector('.loader');
+  loader.classList.add('preload-finish');
+})*/

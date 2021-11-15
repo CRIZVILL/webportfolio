@@ -15,9 +15,9 @@
 
 
 
-  *{box-sizing: : border-box;}  
+*{box-sizing: : border-box;}  
 
-  h1{font-family: 'Paytone One', sans-serif;
+ h1{font-family: 'Paytone One', sans-serif;
   font-size: 85px;
     
 }
@@ -39,6 +39,100 @@ h3{font-family: 'Paytone One', sans-serif;
 p, h5{font-family: 'Roboto', sans-serif;
   color:#1F5F58;}
 body{background-color:var( --main-bg-color);}
+
+/*LOADER----------------------------*/
+.loader {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 999999;
+  background-color: #EDE8C8;
+  font-family: 'Paytone One', sans-serif;
+  transition: opacity 0.3s ease;
+}
+
+.wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.bounceball{
+  width: 20px;
+  height: 20px;
+  background-color:#E0743E;
+  border-radius: 50%;
+  display:block;
+  animation: motion 3s ease infinite;
+}
+
+.text-loading {
+  color: #214941;
+  display: block;
+}
+
+/*.bounceball {
+  position: relative;
+  display: inline-block;
+  height: 37px;
+  width: 15px;
+}
+ .bounceball::before{
+    position: absolute;
+    content: '';
+    display: block;
+    top: 0;
+    width: 15px;
+    height:15px;
+    border-radius: 50%;
+    background-color: #E0743E;
+    transform-origin: 50%;
+    animation: loader-bounce 500ms alternate infinite ease;
+  }
+*/
+
+@keyframes motion{
+    0%{transform: translateX(0) scale(1)}
+    
+  25%{
+    transform: translateX(-50px) scale(0.3)
+  }
+  50%{
+    transform: translateX(0) scale(1)
+  }
+  75%{
+    transform: translateX(50px) scale(0.3)
+  }
+  100%{
+    transform: translateX(0) scale(1)
+  }
+}
+
+
+@keyframes loader-bounce {
+  0% {
+    top: 32px;
+    height: 5px;
+    border-radius: 60px 60px 20px 20px;
+    transform: scaleX(2);
+  }
+  35% {
+    height:15px;
+    border-radius: 50%;
+    transform: scaleX(1);
+  }
+  100% {
+    top: 0;
+  }
+}
+.preload-finish{
+  opacity: 0;
+  pointer-events: none;
+}
+
+
+/*LOADER----------------------------*/
+
 .big-words{
   text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
 }
