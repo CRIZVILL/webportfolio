@@ -40,6 +40,7 @@ p, h5{font-family: 'Roboto', sans-serif;
   color:#1F5F58;}
 body{background-color:var( --main-bg-color);}
 
+
 /*LOADER----------------------------*/
 .loader {
   width: 100%;
@@ -550,6 +551,12 @@ opacity:0;
 .float1 {  
     animation: floating 3s infinite ease-in-out;
 }
+.float3 {  
+    animation: floating 5s infinite ease-in-out;
+}
+.float4 {  
+    animation: floating 7s infinite ease-in-out;
+}
 @keyframes floating {
     from { transform: translate(0,  0px); }
     65%  { transform: translate(0, 15px); }
@@ -601,7 +608,14 @@ transition: .3s;
 
 
 /*FOOTER----------------------*/
+.email{color: white;
+opacity: .4;}
 
+@media screen and (max-width: 509px){
+.email{color: white;
+opacity: .4;
+font-size: 10px;}
+}
 .dark-blue-green{
   background-color: #154242;
 }
@@ -646,6 +660,7 @@ animation: pop 2s ease-in-out infinite;
   background-position: center;
   background-color: red,
 }
+.tools-container{margin: 0 auto;}
 
 /*============================================================*/
 @media screen and (min-width: 768px) {
