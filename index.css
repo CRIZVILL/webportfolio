@@ -2,9 +2,6 @@
   @import url('https://fonts.googleapis.com/css2?family=Paytone+One&family=Roboto:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Allison&display=swap');
 
-
-
-
   :root {
   --shadow1: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
   --shadow2:rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
@@ -13,9 +10,7 @@
   }
 
 
-
-
-*{box-sizing: : border-box;}  
+*{box-sizing: border-box;}  
 
  h1{font-family: 'Paytone One', sans-serif;
   font-size: 85px;
@@ -278,7 +273,7 @@ animation: pop 1s ease-in-out;
 {
   0%
   {
-    transform: scale( .98 )
+    transform: scale( .98 );
     opacity:1;
   }
   20%
@@ -356,7 +351,7 @@ background-color: var(--main-bg-color);
 
 /*SCENE 3 GALLERY*/
 .cloudcontainer, .card{
-  background-color: ;
+  background-color: transparent;
 }
 
 .scene-3-container{
@@ -398,12 +393,6 @@ background-repeat: no-repeat;
   vertical-align: bottom;
 }
 
-/*NOT POSSIBLE*/
-.moon:{
-  background-image: url(./svg/moon.svg);
-  background-repeat: no-repeat;
-}
-/*NOT POSSIBLE*/
 
 .myform{
   background-color: #DBD2A7;
@@ -436,11 +425,12 @@ vertical-align: bottom;
 }
 @keyframes blink  {
   0% {opacity:0;}
-  1%% {opacity:1;}
- 2% {opacity:0;}
- 10% {opacity:1;}
+  1% {opacity:1;}
+  2% {opacity:0;}
+  10% {opacity:1;}
   12% {opacity:0;}
-100% {opacity:0;}}
+  100% {opacity:0;}
+}
 
 .lp-blob
 {
@@ -715,7 +705,7 @@ animation: pop 2s ease-in-out infinite;
   .about-image-wrapper{
    height :500px;
    }
-  ./*lp-avatar-wrapper{
+  /*.lp-avatar-wrapper{
    height :550px;
    }*/
   .lp-separator {
